@@ -7,7 +7,7 @@ export const Error = () => {
   console.error(error);
 
   return (
-    <div className={styles.error_page}>
+    <div className={styles.errorPage}>
       <h1>Oops!</h1>
       <p>Sorry, an unexpected error has occurred.</p>
       <p>

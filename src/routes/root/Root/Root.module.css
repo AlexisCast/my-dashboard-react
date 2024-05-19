@@ -1,0 +1,12 @@
+.rootLayout {
+}
+
+.container {
+  display: flex;
+  align-items: stretch;
+}
+
+.main {
+  width: 100%;
+  padding: 0.5rem;
+}

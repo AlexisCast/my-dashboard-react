@@ -1,0 +1,25 @@
+.sideBar {
+  width: 400px;
+  background-color: #1a202c;
+  min-height: 100vh;
+  color: #8899a6;
+  width: 400px;
+  left: 0;
+  overflow-y: scroll;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.nav a {
+  flex-grow: 1;
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+.nav a:hover {
+  background-color: #0d1016;
+}
