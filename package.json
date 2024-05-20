@@ -18,9 +18,10 @@
     "test": "react-scripts test",
     "test:covarege": "npm test -- --coverage",
     "eject": "react-scripts eject",
-    "lint": "eslint 'src/**/*.{js,ts,jsx,tsx}'",
-    "lint:fix": "eslint 'src/**/*.{js,ts,jsx,tsx}' --fix",
-    "format": "prettier --write ./**/*.{js,jsx,ts,tsx,css,md,json} --config ./.prettierrc.json"
+    "lint": "eslint 'src/**/*.{js,jsx}'",
+    "lint:fix": "eslint 'src/**/*.{js,jsx}' --fix --max-warnings=0",
+    "format": "prettier --write ./**/*.{js,jsx,css,md,json} --config ./.prettierrc.json",
+    "prepare": "husky"
   },
   "eslintConfig": {
     "extends": [
@@ -52,6 +53,7 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
     "globals": "^15.2.0",
+    "husky": "^9.0.11",
     "postcss": "^8.4.38",
     "postcss-import": "^16.1.0",
     "prettier": "^3.2.5",
