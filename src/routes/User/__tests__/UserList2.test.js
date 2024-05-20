@@ -1,5 +1,5 @@
-import { render, screen, act, within } from '@testing-library/react';
-import UserList from './UserList';
+import { render, screen, within } from '@testing-library/react';
+import UserList from '../UserList';
 
 function renderComponent() {
   const users = [

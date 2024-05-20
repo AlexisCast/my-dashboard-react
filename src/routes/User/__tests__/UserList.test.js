@@ -1,5 +1,5 @@
-import { render, screen, act, within } from '@testing-library/react';
-import UserList from './UserList';
+import { render, screen, within } from '@testing-library/react';
+import UserList from '../UserList';
 
 // Issues because there are more rows than expected(header and from body)
 test.skip('it renders one row per user', () => {

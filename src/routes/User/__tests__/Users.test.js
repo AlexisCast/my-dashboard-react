@@ -1,6 +1,6 @@
-import { render, screen, act, within } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import user from '@testing-library/user-event';
-import Users from './Users';
+import Users from '../Users';
 
 test('it can receive a new user and show it on a list', async () => {
   render(<Users />);
