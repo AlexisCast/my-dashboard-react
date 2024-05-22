@@ -1,6 +1,17 @@
 import { render, screen } from '@testing-library/react';
+import { axe, toHaveNoViolations } from 'jest-axe';
 import user from '@testing-library/user-event';
+
 import Users from '../Users';
+
+expect.extend(toHaveNoViolations);
+
+test('container should have no accessibility violations', async () => {
+  const { container } = render(<Users />);
+  const results = await axe(container);
+
+  expect(results).toHaveNoViolations();
+});
 
 test('it can receive a new user and show it on a list', async () => {
   render(<Users />);
