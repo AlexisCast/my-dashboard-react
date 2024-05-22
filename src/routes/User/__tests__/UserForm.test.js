@@ -1,6 +1,17 @@
 import { render, screen } from '@testing-library/react';
 import user from '@testing-library/user-event';
+import { axe, toHaveNoViolations } from 'jest-axe';
+
 import UserForm from '../UserForm';
+
+expect.extend(toHaveNoViolations);
+
+test('UserForm should have no accessibility violations', async () => {
+  const { container } = render(<UserForm />);
+  const results = await axe(container);
+
+  expect(results).toHaveNoViolations();
+});
 
 test('it shows two inputs and a button', () => {
   // Try to render my component

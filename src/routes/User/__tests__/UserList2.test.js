@@ -1,5 +1,9 @@
 import { render, screen, within } from '@testing-library/react';
+import { axe, toHaveNoViolations } from 'jest-axe';
+
 import UserList from '../UserList';
+
+expect.extend(toHaveNoViolations);
 
 function renderComponent() {
   const users = [
@@ -13,6 +17,19 @@ function renderComponent() {
     users
   };
 }
+
+test('UserList should have no accessibility violations', async () => {
+  const users = [
+    { name: 'Baz', email: 'Baz@email.com' },
+    { name: 'Buz', email: 'Buz@email.com' }
+  ];
+
+  const { container } = render(<UserList users={users} />);
+  const results = await axe(container);
+
+  expect(results).toHaveNoViolations();
+});
+
 // Issues because there are more rows than expected(header and from body)
 test.skip('it renders one row per user', () => {
   // Render the component
