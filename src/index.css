@@ -16,7 +16,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  ---color-white: white;
+  --color-white: white;
+  --button-bg-color: #111827;
 }
 
 #root {

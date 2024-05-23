@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Error } from './routes/root/Error/Error';
 import Users from './routes/User/Users';
 import { RootLayout } from './routes/root/Root/Root';
+import Counter from './routes/Counter/Counter';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
             </h1>
           </div>
         )
+      },
+      {
+        path: 'counter',
+        element: <Counter />
       },
       {
         path: 'users',

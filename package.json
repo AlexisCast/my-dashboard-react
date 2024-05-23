@@ -16,7 +16,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "test:covarege": "npm test -- --coverage",
+    "test:coverage": "npm test -- --coverage",
     "eject": "react-scripts eject",
     "lint": "eslint 'src/**/*.{js,jsx}'",
     "lint:fix": "eslint 'src/**/*.{js,jsx}' --fix --max-warnings=0",
