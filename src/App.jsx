@@ -4,6 +4,7 @@ import { Error } from './routes/root/Error/Error';
 import Users from './routes/User/Users';
 import { RootLayout } from './routes/root/Root/Root';
 import Counter from './routes/Counter/Counter';
+import Pokemons from './routes/Pokemons/Pokemons';
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
             <Users />
           </div>
         )
+      },
+      {
+        path: 'pokemons',
+        element: <Pokemons />
       },
       {
         path: 'bye',
