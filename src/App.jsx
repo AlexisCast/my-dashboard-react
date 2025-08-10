@@ -5,6 +5,7 @@ import Users from './routes/User/Users';
 import { RootLayout } from './routes/root/Root/Root';
 import Counter from './routes/Counter/Counter';
 import Pokemons from './routes/Pokemons/Pokemons';
+import HooksApp from './routes/HooksApp/HooksApp';
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
             <Users />
           </div>
         )
+      },
+      {
+        path: 'hooksapp',
+        element: <HooksApp />
       },
       {
         path: 'pokemons',
