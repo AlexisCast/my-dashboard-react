@@ -51,6 +51,8 @@ export const SimpleForm = () => {
         onChange={onInputChange}
       />
 
+      <p>Type in `baz2` and will show Message and execute a addEventListener(onMouseMove)</p>
+
       {userName === 'baz2' && <Message />}
     </>
   );
