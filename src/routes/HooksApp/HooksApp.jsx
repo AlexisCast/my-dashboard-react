@@ -2,6 +2,7 @@ import { CounterApp } from './CounterApp';
 import { CounterWithCustomHook } from './CounterWithCustomHook';
 import { SimpleForm } from './SimpleForm';
 import { FormWithCustomHook } from './FormWithCustomHook';
+import { MultipleCustomHooks } from './MultipleCustomHooks';
 
 const HooksApp = () => {
   return (
@@ -22,6 +23,10 @@ const HooksApp = () => {
       </div>
       <div className="p-4">
         <FormWithCustomHook />
+        <hr />
+      </div>
+      <div className="p-4">
+        <MultipleCustomHooks />
         <hr />
       </div>
     </>
