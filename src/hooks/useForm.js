@@ -12,9 +12,14 @@ export const useForm = (initialForm = {}) => {
     });
   };
 
+  const onResetForm = () => {
+    setFormState(initialForm);
+  };
+
   return {
     ...formState, // return all properies of formState
     formState,
-    onInputChange
+    onInputChange,
+    onResetForm
   };
 };
